@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>YouTube Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./src/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">YouTube Search</h1>
+        <p class="header__tagline">we will find everything</p>
+          <div class="header__wrapper">
+            <input type="text" class="header__search" id="search_field" placeholder="Search...">
+            <i class="fa fa-search" id="search_button"></i>
+          </div>
+    </header>
+    <main class="main">
+        <div class="main__wrapper">
+            <div class="main__result" id="result-list"></div>
+        </div>
+    </main>
+    <footer class="footer">
+    </footer>
+    <template id="videoNode">
+        <div class="main__item">
+            <h2 class="main__item_title">
+                <a href="" class="main__item_link"></a>
+            </h2>
+            <img class="main__item_img" src="https://i.ytimg.com/vi/Ar6IZ9LZPWo/mqdefault.jpg">
+            <p class="main__item_date fa fa-calendar"></p>
+            <p class="main__item_views fa fa-eye"></p>
+            <hr>
+            <div class="main__wrap_author"><p class="main__item_author fa fa-user"></p></div>
+            <hr>
+            <p class="main__item_description"></p>            
+        </div>
+    </template>
+    <template id="temp_controls">
+        <div id="controlls" class="footer__controlls">
+            <span class="pageController" id="prev">&lt;</span>
+            <span class="pageController">1</span>
+            <span class="pageController" id="next">&gt;</span>
+        </div>
+    </template>
+    <script src = 'dist/bundle.js'></script>
+</body>
+</html>
